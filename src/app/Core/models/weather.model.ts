@@ -1,7 +1,8 @@
 export interface WeatherModel {
-    name: any[];
-    main: any[];
+    name: string;
+    main: any;
+    sys: any;
     clouds:any[];
     weather: any[];
-    temp:any[];
+    temp: number;
   }

@@ -8,7 +8,7 @@ import { ApiService } from 'src/app/Core/services/api.service';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  weatherModel: WeatherModel[];
+  weatherModel: WeatherModel;
   forecastModel:ForecastModel;
   constructor(private apiService: ApiService) {}
 

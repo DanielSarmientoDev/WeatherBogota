@@ -9,8 +9,8 @@ import { ApiService } from 'src/app/Core/services/api.service';
 })
 export class WeatherInVariusCitiesComponent implements OnInit {
 
-  weatherLyon: WeatherModel[];
-  WeahterParis: WeatherModel[];
+  WeatherLyon: WeatherModel;
+  WeahterParis: WeatherModel;
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -19,8 +19,8 @@ export class WeatherInVariusCitiesComponent implements OnInit {
   }
   getWeatherLyon(){
     this.apiService.getWeatherById(2996944).subscribe((weatherLyon) => {
-      this.weatherLyon = weatherLyon;
-      console.log(weatherLyon);
+      this.WeatherLyon = weatherLyon;
+      console.log("esta es:", weatherLyon);
     });
   }
   getWeatherParis(){
