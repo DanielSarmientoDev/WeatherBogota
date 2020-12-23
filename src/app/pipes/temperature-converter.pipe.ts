@@ -11,11 +11,11 @@ export class TemperatureConverterPipe implements PipeTransform {
 
                  if(unit === 'C'){
                    let kelvintoCelcius = value - 273.15
-                   return Math.round(kelvintoCelcius)+ "°ᶜ";
+                   return Math.round(kelvintoCelcius)+ "°";
                  }
                  if(unit === 'F'){
                   let kelvintoFarenheit = (value-273.15)*9/5+32;
-                  return Math.round(kelvintoFarenheit) + "°ᶠ";
+                  return Math.round(kelvintoFarenheit) + "°";
                 }
           }
     return;

@@ -1,31 +1,52 @@
 <div class="container">
     <div class="list-cities">
-        <ul >
-            <li>
-                <div class="city-img">
-                    <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
-                </div>
-                <div class="temperature-city">
-                    <h1>23</h1>
-                </div>
-                <div class="name-city">
-                    <h2>{{WeatherLyon?.name}}</h2>
-                    <p>{{WeatherLyon?.sys.country}}</p>
-                </div>
-            </li>
-            <li>
-                <div class="city-img">
-                    <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
-                </div>
-                <div class="temperature-city">
-                    <h1>23</h1>
-                </div>
-                <div class="name-city">
-                    <h2>{{WeahterParis?.name}}</h2>
-                    <p>{{WeahterParis?.sys.country}}</p>
-                </div>
-            </li>
-        </ul>
+        <div class="list-header">
+            <ul >
+                <li>
+                    <div class="container-card-general">
+                        <div class="list-general">
+                            <div class="city-img">
+                                <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
+                            </div>
+                            <div class="temperature-city">
+                                <h1>{{WeatherLyon?.main.temp | temperatureConverter : 'C'}}</h1>
+                            </div>
+                            <div class="name-city">
+                                <h2>{{WeatherLyon?.name}}</h2>
+                                <p>{{WeatherLyon?.sys.country}}</p>
+                            </div>
+                        </div>
+                                <div class="list-footer">
+                                    <p>Humidity: {{WeatherLyon?.main.humidity}}%</p>
+                                    <p>{{WeatherLyon?.weather[0].main}}</p>
+                                    <p>{{WeatherLyon?.wind.speed}}Km/h</p>
+                                </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-card-general">
+                        <div class="list-general">
+                        <div class="city-img">
+                            <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
+                        </div>
+                        <div class="temperature-city">
+                            <h1>{{WeahterParis?.main.temp | temperatureConverter : 'C'}}</h1>
+                        </div>
+                        <div class="name-city">
+                            <h2>{{WeahterParis?.name}}</h2>
+                            <p>{{WeahterParis?.sys.country}}</p>
+                        </div>
+                    </div>
+                            <div class="list-footer">
+                                <p>Humidity: {{WeahterParis?.main.humidity}}%</p>
+                                <p>{{WeahterParis?.weather[0].main}}</p>
+                                <p>{{WeahterParis?.wind.speed}}Km/h</p>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <div class="add-locations">
         <h1>Add locations</h1>

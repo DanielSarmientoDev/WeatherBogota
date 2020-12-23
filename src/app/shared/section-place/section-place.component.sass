@@ -2,7 +2,8 @@
     font-family: 'Oswald', sans-serif
     display: flex
     flex-direction: column
-    width: 400px
+    width: 450px
+    margin:50px
 
 
 .container-header
@@ -20,16 +21,21 @@
     width: 20px
     height: 20px
     margin-left: 3px
+
 .header-images 
     margin-left: 90px
+    display: flex
+    align-items: baseline
+
+p 
+    font-family: 'Oswald', sans-serif
+    font-weight: 100
+    color: #333
+    margin-right: 12px
+    font-size: 15px
 span 
  font-weight: 200
 
-.container-image-left
-    width: 200px
-    height: 100%
-    background-color: #7D68E9
-    border-radius: 25px
 
 .container-nav
     display: flex
@@ -38,16 +44,65 @@ span
 .container-image-right 
     margin-left: 25px
 
-.container-image-right-top  
+.container-image-left img
+    width: 250px
+    height: 87%
+    background-color: #7D68E9
+    border-radius: 25px
+    transition: .5s all
+    &:hover 
+       transform: scale(1.09)
+       transition: .5s all
+
+.container-image-right-top  img
     width: 200px
     height: 55px
     border-radius: 20px
     background-color: #7D68E9
     margin-bottom: 30px
+    transition: .5s all
+    &:hover 
+       transform: scale(1.09)
+       transition: .5s all
 
-.container-image-right-bottom  
+.container-image-right-bottom  img
     width: 200px
-
     background-color: #7D68E9
-    height: 244px
+    height: 200px
     border-radius: 20px
+    transition: .5s all
+    &:hover 
+       transform: scale(1.09)
+       transition: .5s all
+
+@media (max-width: 550px) 
+
+    .container-nav
+        display: flex
+        flex-direction: column
+        justify-content: end
+        align-items: center
+        margin-bottom: 292px
+        margin-left: 0px
+        margin-right: 0px
+    .container
+        margin-left: 50px 
+        margin-bottom: 50px
+
+    .container-header
+        display: block
+         margin: 0
+        text-align: center
+        flex-direction: column
+        align-items: center
+
+    .container-image-right 
+        margin: 0
+        margin-left: 0px
+
+    .add-locations
+        margin: 0
+        margin-left: 0px
+    
+    .text-top-reviews
+        text-align: center

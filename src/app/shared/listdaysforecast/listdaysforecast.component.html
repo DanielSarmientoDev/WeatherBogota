@@ -6,8 +6,7 @@
                   <p>
                         {{day["dt"] | date:'EEEE'}}
                   </p>
-
-                <h2>32/23</h2>
+                <h2>{{day.main.temp | temperatureConverter : 'C'}} / {{day.main.temp | temperatureConverter : 'F'}}</h2>
         </li>
 </ul>
 </div>

@@ -1,5 +1,6 @@
 .container 
-    width: 100%
+    width: 100vw
+    margin-top: 50px
     height: 50vh
     display: flex
     flex-direction: column
@@ -7,9 +8,19 @@
     align-items: center
 .sub-navbar img
     height: 220px
-    width: 90%
-    margin-top:-170px
-    margin-left: 47px
+    width: 97vw
     border-radius: 10px
 .nav-lists
     display: flex
+
+@media (max-width: 1250px) 
+    .nav-lists
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .container 
+        margin: 0px
+    
+
