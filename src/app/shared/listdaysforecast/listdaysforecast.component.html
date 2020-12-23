@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>3 Days <span>Forecast</span></h1>
+    <ul *ngFor="let day of forecastModel">
+        <li> 
+                <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
+                  <p>
+                        {{day["dt"] | date:'EEEE'}}
+                  </p>
+
+                <h2>32/23</h2>
+        </li>
+</ul>
+</div>
+
