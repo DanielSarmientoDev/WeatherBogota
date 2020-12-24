@@ -1,13 +1,25 @@
+<!--
+No tengo Accesó a la api de pronostico
+(Debido a que es de pagó). 
+como solución imprimo los dias históricos
+junto al clima y su imagen correspondiente.
+-->
 <div class="container">
     <h1>3 Days <span>Forecast</span></h1>
     <ul *ngFor="let day of forecastModel">
         <li> 
+                <img *ngIf="day.weather[0].main == 'Rain'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
                 <img *ngIf="day.weather[0].main == 'Clouds'" src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" slot="start" />
                 <img *ngIf="day.weather[0].main == 'Clear'" src="https://www.flaticon.es/svg/static/icons/svg/169/169367.svg" slot="start" />
                  <img *ngIf="day.weather[0].main == 'Snow'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
-                 <p>
-                        {{day["dt"] | date:'EEEE'}}
-                  </p>
+                 <div class="text-day">
+                        <p>
+                                {{day["dt"] | date:'EEEE'}} 
+                        </p>
+                        <p class="weather">
+                                {{day.weather[0].main}}
+                        </p>
+                 </div>
                 <h2>{{day.main.temp | temperatureConverter : 'C'}} / {{day.main.temp | temperatureConverter : 'F'}}</h2>
         </li>
 </ul>

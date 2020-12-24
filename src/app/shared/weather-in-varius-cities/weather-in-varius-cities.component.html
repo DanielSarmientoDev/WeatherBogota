@@ -11,7 +11,7 @@
                                 <img *ngIf="WeatherLyon?.weather[0].main == 'Snow'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
                             </div>
                             <div class="temperature-city">
-                                <h1>{{WeatherLyon?.main.temp | temperatureConverter : 'C'}}</h1>
+                                <h1>{{WeatherLyon?.main.temp | temperatureConverter : 'C'}} ͨ</h1>
                             </div>
                             <div class="name-city">
                                 <h2>{{WeatherLyon?.name}}</h2>
@@ -29,13 +29,13 @@
                     <div class="container-card-general">
                         <div class="list-general">
                         <div class="city-img">
-                                <img *ngIf="WeahterParis?.weather[0].main == 'Rain'" src="https://www.flaticon.es/svg/static/icons/svg/622/622049.svg" slot="start" />
+                                <img *ngIf="WeahterParis?.weather[0].main == 'Rain'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
                                 <img *ngIf="WeahterParis?.weather[0].main == 'Clouds'" src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" slot="start" />
                                 <img *ngIf="WeahterParis?.weather[0].main == 'Clear'" src="https://www.flaticon.es/svg/static/icons/svg/169/169367.svg" slot="start" />
                                 <img *ngIf="WeahterParis?.weather[0].main == 'Snow'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
                         </div>
                         <div class="temperature-city">
-                            <h1>{{WeahterParis?.main.temp | temperatureConverter : 'C'}}</h1>
+                            <h1>{{WeahterParis?.main.temp | temperatureConverter : 'C'}} ͨ</h1>
                         </div>
                         <div class="name-city">
                             <h2>{{WeahterParis?.name}}</h2>

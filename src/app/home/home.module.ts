@@ -11,7 +11,12 @@ import { WeatherInVariusCitiesComponent } from '../shared/weather-in-varius-citi
 
 
 @NgModule({
-  declarations: [HomeComponent,WidgetWeathLeftComponent,ListdaysforecastComponent,SectionPlaceComponent,WeatherInVariusCitiesComponent],
+  declarations: [
+    HomeComponent,
+    WidgetWeathLeftComponent,
+    ListdaysforecastComponent,
+    SectionPlaceComponent,
+    WeatherInVariusCitiesComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
