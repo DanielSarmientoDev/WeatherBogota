@@ -127,6 +127,10 @@
   },
   "defaultProject": "weatherBogota",
   "cli": {
+<<<<<<< HEAD
     "analytics": "9c9e7bb6-2c28-423f-ade0-6293b752d7ca"
+=======
+    "analytics": "413274e4-909f-4bb5-a82d-8073f0edbed2"
+>>>>>>> eacbdbe363713fde49717cd4472ec2c211051edf
   }
 }
