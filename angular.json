@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "weatherBogota"
+    }
+  },
+  "defaultProject": "weatherBogota",
+  "cli": {
+    "analytics": "413274e4-909f-4bb5-a82d-8073f0edbed2"
+  }
 }
