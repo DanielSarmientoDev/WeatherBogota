@@ -20,13 +20,11 @@ export class WeatherInVariusCitiesComponent implements OnInit {
   getWeatherLyon(){
     this.apiService.getWeatherById(2996944).subscribe((weatherLyon) => {
       this.WeatherLyon = weatherLyon;
-      console.log("esta es lyon:", weatherLyon);
     });
   }
   getWeatherParis(){
     this.apiService.getWeatherById(2988507).subscribe((WeahterParis) => {
       this.WeahterParis = WeahterParis;
-      console.log("este es paris",WeahterParis);
     });
   }
 }

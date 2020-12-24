@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   getData() {
     this.apiService.getData().subscribe((weatherModel) => {
       this.weatherModel = weatherModel;
-      console.log(weatherModel);
     });
 
   }
@@ -29,7 +28,6 @@ export class HomeComponent implements OnInit {
   getForecast() {
         this.apiService.getForecast().subscribe((forecastModel) => {
           this.forecastModel = forecastModel["list"]
-          console.log(forecastModel)
         });
   }
 }
