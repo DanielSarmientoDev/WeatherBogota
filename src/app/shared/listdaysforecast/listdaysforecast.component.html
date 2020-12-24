@@ -2,8 +2,10 @@
     <h1>3 Days <span>Forecast</span></h1>
     <ul *ngFor="let day of forecastModel">
         <li> 
-                <img src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" alt="">
-                  <p>
+                <img *ngIf="day.weather[0].main == 'Clouds'" src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" slot="start" />
+                <img *ngIf="day.weather[0].main == 'Clear'" src="https://www.flaticon.es/svg/static/icons/svg/169/169367.svg" slot="start" />
+                 <img *ngIf="day.weather[0].main == 'Snow'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
+                 <p>
                         {{day["dt"] | date:'EEEE'}}
                   </p>
                 <h2>{{day.main.temp | temperatureConverter : 'C'}} / {{day.main.temp | temperatureConverter : 'F'}}</h2>

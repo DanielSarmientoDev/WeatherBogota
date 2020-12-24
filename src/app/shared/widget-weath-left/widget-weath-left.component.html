@@ -1,7 +1,9 @@
 <div class="container-widget-left">
     <div class="container-general">
         <div class="container-img">
-            <img src="https://www.flaticon.es/svg/static/icons/svg/1332/1332295.svg" alt="">
+            <img *ngIf="weatherModel?.weather[0].main == 'Clouds'" src="https://www.flaticon.es/svg/static/icons/svg/166/166015.svg" slot="start" />
+            <img *ngIf="weatherModel?.weather[0].main == 'Clear'" src="https://www.flaticon.es/svg/static/icons/svg/169/169367.svg" slot="start" />
+            <img *ngIf="weatherModel?.weather[0].main == 'Snow'" src="https://www.flaticon.es/svg/static/icons/svg/2834/2834509.svg" slot="start" />
             <h2>{{weatherModel?.weather[0].main}}</h2>
         </div>
         <div class="container-number">
@@ -9,3 +11,5 @@
         </div>
     </div>
 </div>
+
+

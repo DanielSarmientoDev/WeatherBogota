@@ -8,7 +8,7 @@ import { WeatherModel } from 'src/app/Core/models/weather.model';
 })
 export class WidgetWeathLeftComponent implements OnInit {
  @Input() weatherModel : WeatherModel;
- temp:any[];
+  weather: any[];
   constructor() { }
 
   ngOnInit(): void {
